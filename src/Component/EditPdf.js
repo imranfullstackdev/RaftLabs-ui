@@ -36,7 +36,7 @@ const Editpdf = ({ pdf, getImages }) => {
       });
     } else {
       try {
-        const addpdf = await fetch(`http://localhost:8000/EditUser/${id}`, {
+        const addpdf = await fetch(`https://raft-labs-api.vercel.app/EditUser/${id}`, {
           method: "put",
           headers: {
             "Content-type": "application/json",
