@@ -16,7 +16,7 @@ const ViewBooks = () => {
   }, []);
 
   const getImages = async () => {
-    const getAllImages = await fetch(`http://localhost:8000/allUser`);
+    const getAllImages = await fetch(`https://raft-labs-api.vercel.app/allUser`);
     const res = await getAllImages.json();
     setUser(res);
   };
@@ -25,7 +25,7 @@ const ViewBooks = () => {
   }, []);
 
   const DeleteImg = async (id) => {
-    const dltuser = await fetch(`http://localhost:8000/dlt/${id}`, {
+    const dltuser = await fetch(`https://raft-labs-api.vercel.app/dlt/${id}`, {
       method: "Delete",
     });
     alert("deleted sucessfully");
@@ -50,14 +50,14 @@ const ViewBooks = () => {
                   >
                     <object
                       type="application/pdf"
-                      data={`http://localhost:8000/uploads/${pdf.filename} target="_blank" rel="noopener noreferrer"`}
+                      data={`https://raft-labs-api.vercel.app/uploads/${pdf.filename} target="_blank" rel="noopener noreferrer"`}
                       width="100%"
                       height="100%"
                     >
                       <p>
                         View Pdf
                         <a
-                          href={`http://localhost:8000/uploads/${pdf.filename} `}
+                          href={`https://raft-labs-api.vercel.app/uploads/${pdf.filename} `}
                         >
                           <span>VIEW {pdf.fileType}</span>
                         </a>

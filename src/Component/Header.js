@@ -17,6 +17,7 @@ const Header = () => {
               <img
                 src="https://lh5.googleusercontent.com/p/AF1QipOX5qp2YY__jjswFB4weZfzI1shITC-PS89k6mh=w160-h160-k-no"
                 height={"69px"}
+                alt="RaftLabs Logo"
               />
               <h6>RaftLabs</h6>
             </Navbar.Brand>
