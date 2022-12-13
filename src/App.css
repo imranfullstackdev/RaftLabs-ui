@@ -1,0 +1,53 @@
+.allImages{
+  display: flex;  
+  flex-wrap: wrap;
+
+}
+.HomeForm{
+  height: auto;
+  width: auto;
+  background-color: whitesmoke;
+  border-radius: 10px;
+  padding: 12px;
+  color: #000;
+  box-shadow: 0.3rem 0 2rem #000;
+/*   margin-left: -50px; */
+  transition: 0.4s ease-out;
+  position: relative;
+  left: 0px;
+  
+}
+.card {
+  height: 280px;
+  width: 200px;
+  background-color: #17141d;
+  border-radius: 10px;
+  box-shadow: 0.3rem 0 2rem #000;
+/*   margin-left: -50px; */
+  transition: 0.4s ease-out;
+  position: relative;
+  left: 0px;
+  border-radius: 1em;
+      border: 1px solid transparentize(white, 0.5);
+      text-shadow: 0 0 1em transparentize(black, 0.5);
+      background: transparentize(white, 0.8);
+      backdrop-filter: blur(20px);
+      transform: perspective(500px);
+      transform-style: preserve-3d;
+}
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+body{
+  background: #5c746a;
+  background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAAIElEQVQoU2NcWuD6v2nfFwZcgFFdz/I/TlkGBobhoQAAGHYPccmxFlIAAAAASUVORK5CYII=) repeat;
+}
+.card:not(:first-child) {
+    margin-left: -50px;
+}
+
+.card:hover {
+  transform: translateY(-20px);
+  transition: 0.4s ease-out;
+}
+
+
